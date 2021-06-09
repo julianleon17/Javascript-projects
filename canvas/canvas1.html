@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Interactivo</title>
+    <style>
+
+        *{
+            text-align: center;
+        }
+
+        .head{
+            padding: 10px;
+        }
+
+        .canvas{
+            display: flex;
+            padding: 10px;
+        }
+
+        canvas{
+            border: solid black ;
+            margin: auto;
+        }
+
+        .botones{
+            padding: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="head" >
+        <div class="canvas" >
+            <canvas  width="500" height="500" id="lienzo" ></canvas>
+        </div>
+        
+        <div class="botones" >
+            <br>
+            <input type="button" value="Dibujar Grilla" id="grilla" >
+            <input type="button" value="Limpiar" id="limpiar" >
+            <input type="button" value="Dibujar circulo" id="circulo" >
+            <input type="button" value="Hacer Circulos Aleatorios" id="circulos-aleatorios" >
+            <input type="button" value="Hacer Un Trazo" id="lineas-aleatorias" >
+        </div>
+    </div>
+    
+    <script src="canvas1.js"></script>
+</body>
+</html>

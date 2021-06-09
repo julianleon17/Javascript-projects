@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego en Canvas</title>
+
+<style type="text/css" >
+
+*{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+.contenedor{
+    display: flex;
+}
+
+
+/**********
+ *Canvas
+ **********/
+.canvas{
+    margin: auto;
+    padding: 40px;
+}
+
+.canvas canvas{
+    margin: auto;
+    border: blue solid;
+}
+
+.botones{
+    float: center;
+    padding-bottom: 150px;
+}
+
+
+/************
+*Botones
+************/
+
+.botones{
+    padding-right: 200px;
+}
+
+.botones .boton{
+    color: black;
+    height: 70px;
+    width: 90px;
+}
+
+.botones .boton:hover{
+    background-color: red;
+    color: white;
+    border-color:brown ;
+}
+
+/*Boton 1*/
+.botones .boton1{
+    padding-bottom: 30px;
+}
+
+
+/*Boton 2*/
+.botones .boton2{
+    /*padding-left: 565px;*/
+    display: flex;
+}
+
+.botones .boton2 .boton-1{
+    color: black;
+    padding: 10px;
+    margin: auto;
+    margin-right: 50px;
+}
+
+.botones .boton2 .boton-2{
+    padding: 10px;
+    margin: auto;
+    margin-left: 50px;    
+}
+
+
+/*Boton 3*/
+.botones .boton3{
+    padding: 30px;
+}
+
+
+/*Boton 4*/
+.botones .boton4{
+    padding-top: 30px;
+}
+
+      
+</style>
+</head>
+<body>
+
+    <div id="header" >
+        <h1>Juego de Canvas</h1>
+        <p>Para mover a Diana puedes usar las teclas y los botones</p>
+
+        <div class="contenedor" >
+            <div class="canvas" >
+                <canvas width="500" height="500" id="canvas" ></canvas>
+            </div>
+        
+            <div class="botones" >
+                <div class="boton1" >
+                    <input class="boton" type="button" value="🡹" id="movimientoArriba" >
+                </div>
+
+                <div class="boton2" >
+                    <div class="boton-1" >
+                        <input class="boton" type="button" value="🡸" id="movimientoIzquierda" >
+                    </div>
+
+                    <div class="boton-2" >
+                        <input class="boton" type="button" value="🡺" id="movimientoDerecha" >
+                    </div>
+                </div>
+
+                <div class="boton4" >
+                    <input class="boton" type="button" value="🡻" id="movimientoAbajo" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="juegoCanvas.js"></script>
+</body>
+</html>
