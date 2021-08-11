@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+
+<style>
+
+*{
+  text-align: center;
+  font-family: arial;
+}
+
+.info{
+  padding: 10px;
+  margin: 5px;
+}
+
+.res{
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  padding: 5px;
+}
+
+#message-price{
+  margin-bottom:0;
+  padding:10px;
+}
+
+#sig-p{
+  margin: 0px;
+  color: green;
+}
+
+table{
+  margin:auto;
+}
+
+</style>
+</head>
+
+<body>
+
+  <h1>¡Descuentos!</h1>
+  <p>Este programa te dirá el precio total de cualquier producto con su respectivo descuento</p>
+
+  <div class="res" >
+    <div class="info" >
+      <label for="total-price" >Precio Total</label>
+      <input type="number" id="total-price" placeholder="Ingresa el precio Total" required="" >
+    </div>
+
+    <div class="info" >
+      <label for="disc" >Descuento</label>
+      <input type="number" id="disc" placeholder="Ingresa el Descuento" required="" >
+    </div>
+
+    <input type="button" value="Calcular" id="cal" >
+
+    <h3>
+      <p id="message-price" >Precio final del producto: </p>
+
+      <table>
+
+        <td>
+          <p id="sig-p" >$</p>
+        </td>
+
+        <td>
+          <p id="finalPrice" >$ $ $</p>
+        </td>
+
+      </table>
+
+
+      <p id="errorText" ></p>
+    </h3>
+  </div>
+
+  <script src="./desc.js" ></script>
+</body>
+</html>
